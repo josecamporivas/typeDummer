@@ -1,0 +1,120 @@
+body{
+    background-color: #223;
+}
+
+#containerSoundBox{
+    /* margin-top: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgDj{
+    /* border: 3px solid #fff; */
+    filter: drop-shadow(5px 5px 10px #ffffff);
+    width: 150px;
+}
+
+#imgDj.lila{
+    filter: drop-shadow(5px 5px 10px #e88ae4);  /* a */
+}
+
+#imgDj.red{
+    filter: drop-shadow(5px 5px 10px #f40808);  /* d */
+}
+
+#imgDj.blue{
+    filter: drop-shadow(5px 5px 10px #0373cf);  /* k */
+}
+
+#imgDj.aguamarina{
+    filter: drop-shadow(5px 5px 10px #7FFFD4);  /* m */
+}
+
+#imgDj.orange{
+    filter: drop-shadow(5px 5px 10px #ffa600);  /* p */
+}
+
+#imgDj.green{
+    filter: drop-shadow(5px 5px 10px #74B62E);  /* s */
+}
+
+#imgDj.pink{
+    filter: drop-shadow(5px 5px 10px #da3ccd);  /* t */
+}
+
+#imgDj.yellow{
+    filter: drop-shadow(5px 5px 10px #d7d702);  /* w */
+}
+
+#soundbox{
+    border: 4px solid blueviolet;
+    width: 500px;
+    max-width: calc(100% - 30px);
+    height: 200px;
+    background-color: rgba(103, 103, 106, 0.758);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 5px;
+}
+
+#containerDropdown{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buttonDropdown{
+    display: flex;
+    align-content: center;
+    background-color: #52527a;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#imgDropdown{
+    margin-top: 3px;
+    filter: invert(100%);
+    width: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.20s linear;
+}
+#imgDropdown.open{
+    transform: rotate(180deg);
+    transition: transform 0.20s linear;
+}
+
+@keyframes spin {
+    from{
+        rotate: 0;
+    }
+
+    to{
+        rotate: -10px;
+    }
+}
+
+.invisible{
+    display: none;
+}
+
+#dropdown{
+    background-color: #3e3e5c;
+    border-radius: 10px;
+}
+
+.color{
+    user-select: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: #b6b6b6;
+}
+
+.color:hover{
+    background-color: #52527a;
+}
