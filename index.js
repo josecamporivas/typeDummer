@@ -18,6 +18,7 @@ const addEffect = (imgDj, classname) => {
 
 const playNote = (letter) => {
     const sound = new Audio(soundBank.get(letter).file)
+    sound.autoplay = true
     sound.play()
     letter === 'a' && addEffect(imgDj, 'lila')
     letter === 'd' && addEffect(imgDj, 'red')
